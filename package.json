@@ -1,31 +1,32 @@
 {
-    "name": "silverhold",
-    "version": "0.1.0",
+    "name": "nextjs-with-typescript",
+    "version": "5.0.0",
     "private": true,
     "scripts": {
-        "dev": "./clear-cache.sh && next dev",
+        "dev": "next dev",
         "build": "next build",
-        "start": "next start"
+        "start": "next start",
+        "lint": "next lint",
+        "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
     },
     "dependencies": {
-        "@ceteio/styled-components-rhythm": "^2.0.1",
-        "@material-ui/core": "^4.11.0",
-        "@mdx-js/loader": "^1.6.16",
-        "@next/mdx": "^9.5.1",
-        "babel-loader": "^8.1.0",
-        "gray-matter": "^4.0.2",
-        "next": "9.5.1",
-        "react": "16.13.1",
-        "react-dom": "16.13.1",
-        "stringify-object": "^3.3.0",
-        "styled-components": "^5.1.1",
-        "styled-normalize": "^8.0.7"
+        "@emotion/cache": "latest",
+        "@emotion/react": "latest",
+        "@emotion/server": "latest",
+        "@emotion/styled": "latest",
+        "@mui/icons-material": "latest",
+        "@mui/material": "latest",
+        "@next/mdx": "^12.0.7",
+        "grey-matter": "latest",
+        "next": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "shevyjs": "^2.1.0"
     },
     "devDependencies": {
-        "@types/node": "^14.0.27",
-        "@types/react": "^16.9.44",
-        "babel-plugin-macros": "^2.8.0",
-        "babel-plugin-preval": "^5.0.0",
-        "typescript": "^3.9.7"
+        "@types/react": "latest",
+        "eslint": "latest",
+        "eslint-config-next": "latest",
+        "typescript": "latest"
     }
 }
